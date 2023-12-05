@@ -1,0 +1,93 @@
+body {
+  background-color: #211f1f; /* Change this to your desired background color */
+}
+
+.picandbubs {
+  float: right;
+  margin-right: -90vh;
+  width: 75vh;
+  margin-top: -15vh;
+}
+.icons{
+  width:85vh;
+}
+.button{
+  background-color: rgb(26, 142, 225);
+}
+
+div h1 {
+  padding-top: 6vh;
+  font-weight: normal; /* Set font weight to normal for "Hi, I'm" */
+  margin-right: -18%;
+  font-size: 4vh;
+}
+
+div h2.typewriter {
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+
+  font-size: 7vh;
+  color: rgb(26, 142, 225);
+  margin-right: -30%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(92, 79, 233); /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(92, 79, 233);
+  }
+}
+
+
+div:hover h2.typewriter {
+  text-shadow: 0 0 20px rgba(26, 142, 225, 0.8);
+}
+
+
+img:hover {
+  transform: scale(1.15);
+ 
+  animation: pulsate 1s;
+  
+}
+
+.bubs {
+  transform: scale(1.18); /* Increase size on hover for pulsating effect */
+  animation: pulsate 1s infinite; /* Apply pulsating effect */
+}
+
+/* The pulsating effect */
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}

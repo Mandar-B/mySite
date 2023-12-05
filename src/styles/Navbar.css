@@ -1,0 +1,59 @@
+body {
+  /* Remove default body padding */
+  padding-left: 5%;
+}
+
+.navbar {
+  width: 86%;
+  height: 7.5%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  background: rgb(26, 142, 225);
+  position: fixed;
+  top: 4%;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(26, 142, 225, 0.8); /* Add a subtle box-shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition to the box-shadow */
+}
+
+.navbar:hover {
+  box-shadow: 0 0 45px rgba(26, 142, 225, 1); /* Change the box-shadow on hover for a glowing effect */
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.navbar .leftSide img {
+  width: 20vh;
+  height: 30vh; /* Set the height to match the width for a square image */
+  object-fit: contain; /* Preserve the aspect ratio of the image */
+}
+
+.navbar .rightSide {
+  flex: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 3vh; /* Adjust the margin as needed */
+  font-weight: bolder;
+  font-size: 2.25vh; /* Adjust the font size as needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  transform: scale(1.25);
+  animation: pulsate 1s infinite;
+  text-emphasis-color: rgb(1,1,1);
+}

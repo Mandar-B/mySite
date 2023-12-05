@@ -1,0 +1,70 @@
+/* Contact.css */
+.dogpic{
+  width:10vh;
+}
+
+
+.container {
+  margin-top: -55vh;
+  
+  float: right;
+  margin-left: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.boxpic{
+  position: static;
+}
+
+.--text-center-- {
+  font-size: 5vh;
+  width: 40vh;
+  text-align: center;
+  margin-top: -30vh;
+  
+padding-bottom: 5vh;
+margin-bottom: 0vh;
+}
+
+.--form-control--card {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+  
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20vh;
+  
+}
+
+.column1 {
+  width: 150vh;
+  flex: 1;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  margin-left: 5vh;
+}
+
+
+.input-group input,
+.input-group textarea {
+  margin-bottom: 10px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.--btn-primary {
+  background-color:rgb(26, 142, 225);
+  
+}
